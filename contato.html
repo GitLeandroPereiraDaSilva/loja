@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+
+    }
+    body {
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-size: 25px;
+        background-image: linear-gradient(90deg, rgb(166,0,255), rgb(198, 166, 49));
+    }
+    .box{
+        width: 65px;
+        height: 68px;
+        display: flex;
+        align-items: center;
+        padding: 5px;
+        position: relative;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all 0.4s ease;
+    }
+
+    .box:hover{
+        font-size: 50px;
+        width: 300px;
+        background: #c32aa3;
+        border-radius: 35px;
+        color: #fff;
+        box-shadow: 0 0 50px #b315917c;
+    }
+    .box:nth-child(2):hover{
+        background: #25d366;
+        box-shadow: 0 0 50px #25d3657e;
+    }
+    .box:nth-child(3):hover{
+        background: #1877f2;
+        box-shadow: 0 0 50px #1876f285;
+    }
+    .box:nth-child(4):hover{
+        background: #1da1f2;
+        box-shadow: 0 0 50px #1da0f280;
+    }
+    .navbar p{
+        transform: translate(60px);
+    }
+    .box .icon{
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        border-radius: 50%;
+        margin-right: 10px;
+        transition: all 0.4s ease;
+    }
+    .header{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        background: black;
+    }
+    .header img{
+        width: 50px;
+    }
+    .menu{
+        display: flex;
+    }
+    body, ul, li, a{
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        font-family: Arial, Helvetica, sans-serif;
+        text-decoration: none;
+        color: white;
+        font-size: 25px;
+    }
+    .menu li{
+        margin-left: 0px;
+        padding-right: 50px;
+    }
+    .menu li a{
+        display: block;
+        padding: 40px;
+        align-content: center;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+    }
+    .navbar{
+        align-items: center;
+        margin-top: 10%;
+        margin-left: 40%;
+    }
+    .menu li a{
+        display: block;
+        padding: 20px;
+        align-content: center;
+        border-right: 1px solid white;
+        border-left: 1px solid white;
+    }
+
+    
+</style>
+</head>
+<body>
+    <header class="header">
+        <img src="dica.png" alt="Dica Master">
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Sobre</a></li>
+                <li><a href="produtos.html">Produtos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="navbar">
+        <div class="box">
+            <div class="icon instagram">
+                <ion-icon name="logo-instagram"></ion-icon>
+            </div>
+            <p>Instagram</p>
+        </div>
+
+        <div class="box">
+            <div class="icon whatsapp">
+                <ion-icon name="logo-whatsapp"></ion-icon>
+            </div>
+            <p>Whatsapp</p>
+        </div>
+
+        <div class="box">
+            <div class="icon facebook">
+                <ion-icon name="logo-facebook"></ion-icon>
+            </div>
+            <p>Facebook</p>
+        </div>
+
+        <div class="box">
+            <div class="icon twitter">
+                <ion-icon name="logo-twitter"></ion-icon>
+            </div>
+            <p>Twitter</p>
+        </div>
+    </div>
+
+</body>
+</html>
